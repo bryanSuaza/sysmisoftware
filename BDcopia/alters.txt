@@ -1,0 +1,13 @@
+ALTER TABLE `parqueadero` ADD `usuario_id` INT(11) NULL DEFAULT NULL AFTER `estado`, ADD `fecha_registro` DATETIME NULL DEFAULT NULL AFTER `usuario_id`, ADD `usuario_actualiza_id` INT(11) NULL DEFAULT NULL AFTER `fecha_registro`, ADD `fecha_actualiza` DATETIME NULL DEFAULT NULL AFTER `usuario_actualiza_id`; 
+
+ALTER TABLE `parqueadero` ADD CONSTRAINT `usuario_id_fk` FOREIGN KEY (`usuario_id`) REFERENCES `usuario`(`usuario_id`) ON DELETE RESTRICT ON UPDATE RESTRICT; 
+
+ALTER TABLE `parqueadero` ADD CONSTRAINT `usuario_actualiza_id_fk` FOREIGN KEY (`usuario_actualiza_id`) REFERENCES `usuario`(`usuario_id`) ON DELETE RESTRICT ON UPDATE RESTRICT; 
+
+ALTER TABLE `parqueadero` ADD `tipo_servicio` TEXT NULL DEFAULT NULL AFTER `estado`; 
+
+ALTER TABLE `parqueadero` ADD `horas` VARCHAR(4) NULL DEFAULT NULL AFTER `tipo_servicio`, ADD `dias` VARCHAR(4) NULL DEFAULT NULL AFTER `horas`, ADD `medios_dias` VARCHAR(4) NULL DEFAULT NULL AFTER `dias`; 
+
+ALTER TABLE `tarifas_parqueadero` ADD `tiempo_cobro` SMALLINT(11) NOT NULL AFTER `valor_mes`;
+
+ALTER TABLE `tarifas_parqueadero` CHANGE `tiempo_cobro` `tiempo_cobro` SMALLINT(11) NOT NULL DEFAULT '0'; 

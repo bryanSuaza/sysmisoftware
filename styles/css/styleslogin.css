@@ -1,0 +1,94 @@
+/*
+
+.imagen{
+    background-image: url(../../images/logo_1.png);
+    opacity: 0.6;
+    height: 200px;
+    width: 235px;
+}
+
+.login{
+    height: 500px;
+    width: 370px;
+    margin: 80px;
+    background-color:#fff;
+    opacity: 0.92;
+    border-radius: 8px;
+   
+}
+
+
+.form-group{
+    margin-bottom: 10px;
+    margin-top: 70px;
+    margin-right: 100px;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 460px;
+    border-radius: 2px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: serif;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+.form-control{
+    width: 70%;
+    height: 40px;
+    margin-left: 60px;
+    color: #000;
+    box-shadow: 10px 6px 20px 0px rgba(0,0,0,0.45);
+    margin-top: 40px;
+    border-radius: 2px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #57d86d;
+    border-color: transparent;
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 47px;
+    width: 150px;
+    border-radius: 2px;
+   
+}*/
+
+body {
+    background-image: url(../../images/Fundador.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login {
+    background-color: #ffffffe6;
+    height: auto;
+    width: auto;
+    margin-left: 5px;
+    margin-top: 99px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 12px 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.espacio {
+    margin-bottom: 25px;
+}
+
+.imagenMsje {
+    background-image: url('../../images/ingeniero.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
